@@ -1,0 +1,16 @@
+<div>
+  <p>
+    <h1>
+      Title: <%= @post.title %>
+    </h1>
+  </p>
+  <p>
+    <h5>
+      Content: <%= @post.content %>
+    </h5>
+  </p>
+</div>
+
+
+<%= link_to "Edit Post", edit_post_path(@post), :class => 'btn btn-secondary' %>
+<%= link_to "Delete Post", post_path(@post),method: :delete,data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>
