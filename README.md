@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Sqlite3 is a big problem when it comes to using on windows with rails
+* Thinking to change it to PostgreSQL in order to be able to deploy on Heroku 
+* Layout is buggy when it comes to edges. I will try to read more HTML in future :(

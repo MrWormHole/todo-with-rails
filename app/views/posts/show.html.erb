@@ -1,4 +1,4 @@
-<div>
+<div style="position:relative;left:20px;top:20px">
   <p>
     <h1>
       Title: <%= @post.title %>
@@ -9,8 +9,7 @@
       Content: <%= @post.content %>
     </h5>
   </p>
+
+  <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-secondary' %>
+  <%= link_to "Delete", post_path(@post),method: :delete,data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>
 </div>
-
-
-<%= link_to "Edit Post", edit_post_path(@post), :class => 'btn btn-secondary' %>
-<%= link_to "Delete Post", post_path(@post),method: :delete,data: {confirm: 'Are you sure?'}, :class => 'btn btn-danger' %>

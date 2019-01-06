@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleBlog</title>
+    <title>Simple ToDo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -17,13 +17,17 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/posts">Home</a>
+            <a class="nav-link active" href="/posts">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="/about">About</a>
           </li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="navbar-nav navbar-left">
           <li class="nav-item">
-            <%= link_to "Create Post",new_post_path %>
+            <%= link_to "Add ToDo",new_post_path %>
           </li>
         </ul>
       </div>
